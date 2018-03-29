@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.myplayer.WelcomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/welcomeCoverRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:onClick="welcomeOnClick">
+
+        <Button
+            android:id="@+id/welcomePlayPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:onClick="welcomeOnClick"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/welcomeNowPlayingInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/welcomeNowPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/welcomePlayPauseButton"
+            android:layout_alignBottom="@+id/welcomePlayPauseButton"
+            android:layout_alignStart="@+id/welcomeNowPlayingInfo"
+            android:layout_marginBottom="10dp"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:id="@+id/allSongsRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:onClick="welcomeOnClick">
+
+                <TextView
+                    android:id="@+id/allSongs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/allSongsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/allSongs"
+                    android:layout_below="@+id/allSongs"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/allSongsImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/allSongs"
+                    android:layout_toStartOf="@+id/allSongs"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/favouriteRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:onClick="welcomeOnClick">
+
+                <TextView
+                    android:id="@+id/favouriteSongs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/favouriteSongsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/favouriteSongs"
+                    android:layout_below="@+id/favouriteSongs"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/favouriteSongsImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/favouriteSongs"
+                    android:layout_toStartOf="@+id/favouriteSongs"
+                    app:srcCompat="@mipmap/ic_launcher" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:id="@+id/playlistRdelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:onClick="welcomeOnClick">
+
+                <TextView
+                    android:id="@+id/playlists"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/playlistsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/playlists"
+                    android:layout_below="@+id/playlists"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/playlists"
+                    android:layout_toStartOf="@+id/playlists"
+                    app:srcCompat="@mipmap/ic_launcher" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mostPlayedRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:onClick="welcomeOnClick">
+
+                <TextView
+                    android:id="@+id/mostPlayed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/mostPlayedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/mostPlayed"
+                    android:layout_below="@+id/mostPlayed"
+                    android:text="TextView" />
+
+                <ImageView
+                    android:id="@+id/mostPlayedImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/mostPlayed"
+                    android:layout_toStartOf="@+id/mostPlayed"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

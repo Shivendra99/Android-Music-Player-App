@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/songInfoEditRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.myplayer.SongInfoEdit">
+
+    <TextView
+        android:id="@+id/pathTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pathTextView"
+        android:layout_alignEnd="@+id/pathTextView"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/albumEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/sizeTextView"
+        android:layout_alignEnd="@+id/sizeTextView"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="80dp"
+        android:gravity="center_horizontal"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/artistEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/albumEditText"
+        android:layout_alignEnd="@+id/albumEditText"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:gravity="center_horizontal"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/artistEditText"
+        android:layout_alignEnd="@+id/artistEditText"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:gravity="center_horizontal"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/coverArtImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/titleEditText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/pathHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pathTextView"
+        android:layout_alignBottom="@+id/pathTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="Path" />
+
+    <TextView
+        android:id="@+id/sizeHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sizeTextView"
+        android:layout_alignStart="@+id/pathHeading"
+        android:text="Size" />
+
+    <TextView
+        android:id="@+id/albumHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/albumEditText"
+        android:layout_alignBottom="@+id/albumEditText"
+        android:layout_alignStart="@+id/sizeHeading"
+        android:text="Album" />
+
+    <TextView
+        android:id="@+id/artistHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/artistEditText"
+        android:layout_alignStart="@+id/albumHeading"
+        android:text="Artist" />
+
+    <TextView
+        android:id="@+id/titleHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/titleEditText"
+        android:layout_alignStart="@+id/artistHeading"
+        android:text="Title" />
+
+</RelativeLayout>

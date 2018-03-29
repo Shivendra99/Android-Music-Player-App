@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customListRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/titleText3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/statusImage"
+        android:text="King Anush"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignStart="@+id/titleText3"
+        android:layout_below="@+id/titleText3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/statusImage"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/infoText"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/mainListOptionsButton" />
+
+    <Button
+        android:id="@+id/mainListOptionsButton"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:text="." />
+
+</RelativeLayout>
